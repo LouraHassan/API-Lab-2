@@ -3,8 +3,6 @@ let gridDiv = document.getElementsByClassName('gridDiv')[0]
 let link = "https://rickandmortyapi.com/api/character";
 
 fetch(link).then(response => response.json()).then(data => {
-    console.log(data) 
-    console.log(data.results);
     data.results.map(item => {
         let box = document.createElement('div')
         box.classList.add('card')
